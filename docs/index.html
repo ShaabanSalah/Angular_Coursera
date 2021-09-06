@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="myFirstAssignment">
+  <head>
+    <meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <title>AngularJS - Coding Assignment 1   </title>
+  </head>
+  <body>
+    <div ng-controller="assignmentControler">
+    <h2>Coding Assignment 1</h2>
+	<hr>
+	<h3>Hi there, Please tell me about your items you usually eat for lunch</h3>
+	<span style="color:green">kindly fill your itms in coma seperated form like (item 1,item 2,...)</span>
+	<br/><br/>
+      <div>
+		<input type="text"  ng-model="itemsForLunch">
+		<br>
+        Your meals : {{itemsForLunch}}
+      </div>
+    </div>
+  </body>
+</html>
